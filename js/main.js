@@ -9,6 +9,10 @@ $(document).ready(function() {
   });
 
   // Owl-Carousel for Blog
-  $('.owl-carousel').owlCarousel();
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+  });
 
 });

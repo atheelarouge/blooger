@@ -61,6 +61,10 @@ span {
   font-family: var(--Abel);
 }
 
+.container {
+  margin: 0 5vw;
+}
+
 button.btn {
   border: none;
   border-radius: 2rem;
@@ -199,10 +203,11 @@ main .blog {
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  background-size: 65%;
 }
 
 main .blog .blog-post {
-  padding: 6rem;
+  padding-top: 6rem;
 }
 
 main .blog .blog-content {
