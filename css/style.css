@@ -239,7 +239,46 @@ main .blog-content span {
   display: block;
 }
 
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav button.owl-prev .owl-nav-prev,
+.owl-nav button.owl-next .owl-nav-next {
+  color: var(--text-gray);
+  background: transparent;
+  font-size: 3rem;
+  padding: 10px;
+  margin: 0;
+}
+
+.owl-theme .owl-nav .owl-prev [class*="owl-"]:hover,
+.owl-theme .owl-nav .owl-next [class*="owl-"]:hover {
+  background: white;
+  color: var(--text-gray);
+  transform: scale(0.95);
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
 /* ------x------ Blog Carousel -------x----- */
+
+/* ------------- Site Content ------------- */
+
+main .site-content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+main .post-content {
+  margin-bottom: 5rem;
+}
+
+/* ------x------ Site Content -------x----- */
 
 /* ------x------ Main Content -------x----- */
 
