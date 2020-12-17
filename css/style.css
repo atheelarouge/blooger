@@ -501,6 +501,21 @@ footer.footer a {
   color: #fff;
 }
 
+footer.footer .move-up {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+}
+
+footer.footer .move-up span {
+  color: var(--midnight);
+}
+
+footer.footer .move-up span:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
 /*-------------- Footer -------------- */
 
 /*    Viewport less or equal to 750px     */
