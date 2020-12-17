@@ -14,6 +14,7 @@ body {
   --text-light: #686666da;
   --white: #ffffff;
   --midnight: #104f55;
+  --bg-color: #000;
 
   /* Gradiend Color */
   --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
@@ -420,12 +421,87 @@ li.list-items:hover {
 }
 
 .site-content .sidebar .popular-tags {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
+span.tag {
+  background: var(--sky);
+  margin: 0.4rem 0.6rem;
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+}
 /* ------x------ Sidebar -------x----- */
 
 /* ------x------ Main Content -------x----- */
+
+/*-------------- Footer -------------- */
+
+footer.footer {
+  height: 100%;
+  background: var(--bg-color);
+  position: relative;
+}
+
+footer.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 3rem 0.9rem;
+}
+
+footer.footer .container h2 {
+  color: #fff;
+}
+
+footer.footer .newsletter .form-element {
+  background: black;
+  display: inline-block;
+}
+
+.form-element input {
+  padding: 0.5rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: var(--Josefin);
+  font-size: 1rem;
+  width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+  background: var(--sky);
+  padding: 0.7rem 0.7rem;
+  cursor: pointer;
+}
+
+footer.footer .instagram div > img {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  margin: 0.3rem 0.4rem;
+}
+
+footer.footer .follow-icons a {
+  color: #fff;
+  padding: 0 0.4rem;
+}
+footer.footer .follow-icons a:hover {
+  color: #a1c4cf;
+}
+
+footer.footer .rights {
+  justify-content: center;
+  font-family: var(--Josefin);
+}
+footer.footer a {
+  color: #fff;
+}
+
+/*-------------- Footer -------------- */
 
 /*    Viewport less or equal to 750px     */
 
