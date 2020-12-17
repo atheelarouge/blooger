@@ -518,6 +518,26 @@ footer.footer .move-up span:hover {
 
 /*-------------- Footer -------------- */
 
+/*    Viewport less or equal to 1130px     */
+
+@media only screen and (max-width: 1130px) {
+  .site-content .post-content > .post-image .post-info {
+    left: 2rem !important;
+    bottom: 1.2rem !important;
+    border-radius: 0 !important;
+  }
+
+  .site-content .sidebar .popular-post .post-info {
+    display: none !important;
+  }
+
+  footer.footer .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*    Viewport less or equal to 1130px     */
+
 /*    Viewport less or equal to 750px     */
 
 @media only screen and (max-width: 750px) {
@@ -527,6 +547,10 @@ footer.footer .move-up span:hover {
   }
   .nav .toggle-collapse {
     display: initial;
+  }
+
+  main .site-content {
+    grid-template-columns: 100%;
   }
 }
 
